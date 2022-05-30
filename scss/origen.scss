@@ -1,0 +1,450 @@
+/*imports*/
+@import "colores";
+/* todo */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:$morado_fondo;
+    width: 100%;
+    height: 100vh;
+    color: $letras_interior;
+    word-wrap: break-word;
+}
+
+.logo_header{
+    max-width: 150rem;
+}
+.tamaño_sociales{
+    width: 1rem;
+}
+.header_mio{
+    width: 100%;
+    padding: 1%;
+}
+.row{
+    margin:0;
+    max-width: 100%;
+    padding: 0;
+}
+.fuente_link_mio_header{
+    color:$letras_titulos;
+    font-size: 1.9rem;
+}
+.footer_mio{
+    width: 100%;
+    background-color:$gris_footer;
+    border-top: solid 3px $bordes_color;
+    margin-top: 4.5%;
+}
+.titulo{
+    padding:2%;
+    font-size: 3rem;
+    color:$letras_titulos;
+}
+.sub-titulo{
+    margin:2%;
+    margin-top: 0;
+    font-size: 2.5rem;
+    color:$letras_titulos;
+}
+.background-color-none{
+    background-color: $morado_fondo;
+}
+/* index */
+
+.seudo-titulo{
+    font-size: 2rem;
+    color:$letras_titulos;
+}
+.descripcion_index{
+    
+    font-size: 1.2rem;
+    justify-content: center;
+    text-align: center;
+}
+.texto_descripcion_index{
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.logos_sagas_index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;/* multilinea */
+    justify-content: space-evenly;
+    align-items: center;/* eje invertido*/
+}
+.libro_saga_index{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;/* multilinea */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.espacio{
+    width: 100%;
+    margin:0;
+}
+/*autor*/
+.border-colors{
+    border:solid 2px $bordes_color
+}
+.imagen_autor{
+    border-radius: 10px;
+}
+.redondeo{
+    border-radius: 65px;
+}
+.descripcion_evento{
+    line-height: 1.5em;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+/*libros*/
+.libros-libros-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    padding:5%;
+
+}
+.no_superponer{
+    display: block;
+    margin:5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*entrevista*/
+.entrevistas_juntos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;/* multilinea */
+    justify-content: space-evenly;
+    align-items: center;
+    margin:2%;
+}
+.entrevistas{
+    border: solid 3px $bordes_color;
+    color:$letras_interior;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2%;
+    width: 400px;
+    margin: 3%;
+}
+.margen_entrevistas{
+    margin:1%;
+}
+/*eventos*/
+.marco_eventos_juntos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;/* multilinea */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.marco_eventos{
+    border: solid 3px $bordes_color;
+    border-radius: 10px;
+    color:$letras_interior;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2%;
+    margin: 3%;
+}
+.espacio_abajo{
+    margin-bottom: 1rem;
+}
+/*ventas*/
+.texto_descripcion_libros{
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.carpeta_ventas{
+    border-radius: 25px;/* hace los bordes de redondos*/
+    background-color: $gris_zona_compras;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    width:100%;
+}
+.logos_compra{
+    width: 25%;
+    margin-top: 1rem;
+}
+@media (max-width: 480px){
+    /*todo*/
+    .header_mio{
+        background-color:$header_mobile;
+    }
+    .logo_footer{
+        display: none;
+    }
+    
+    .texto_footer{
+        font-size: 1rem;
+    }
+    .logos_sociales{
+        width: 30%;
+    }
+    /*index*/
+    .logos_sagas_index{
+        margin: 4%;
+    }
+    .libro_saga_index{
+        display: none;
+    }
+    /*autor*/
+    .imagen_autor{
+        max-width: 400px;
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+    }
+    .texto_biografia{
+        line-height: 1.5em;
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    /*eventos*/
+    .marco_eventos{
+        width: 60%;
+    }
+    /*libros*/
+    .libro_tamaño_libros{
+        width:100%;
+        margin: 5%;
+    }
+    /*ventas*/
+    .imagen_libro{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .texto_descripcion_libros{
+        margin-top:1.7rem;
+        margin-bottom:1.7rem;
+    }
+    /*contacto*/
+    .contacto_formulario{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 1.3rem;
+        flex-direction: column;
+        margin:10%;
+        width: 75%;
+        padding: 3%;
+    }  
+    .contacto_sociales{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.7rem;
+        flex-direction: column;
+        margin:10%;
+        width: 50%;
+        padding: 3%;
+    }  
+
+    .mail{
+        display: none;
+    }
+}
+@media (min-width: 481px) and (max-width: 1174px){
+    /*todo*/
+    .header_mio{
+        background-color:$header_mobile;
+    }
+    .logo_footer{
+        display: none;
+    }
+    .texto_footer{
+        font-size: 1.9rem;
+    }
+    /*index*/
+    .logos_sagas_index{
+        margin: 4%;
+    }
+    .libro_saga_index{
+        display: none;
+    }
+    /*autor*/
+    .imagen_autor{
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+    }
+    .texto_biografia{
+        line-height: 1.9em;
+        font-size: 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .descripcion_evento{
+        font-size: 1.7rem;
+    }
+    /*eventos*/
+    .marco_eventos{
+        width: 30%;
+    }
+    /*libros*/
+    .libro_tamaño_libros{
+        width:40%;
+        margin: 5%;
+    }  
+    /*ventas*/
+    .imagen_libro{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .texto_descripcion_libros{
+        margin:1.7rem;
+    }
+    /*contacto*/
+    .contacto_formulario{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        font-weight: 1.2rem;
+        flex-direction: column;
+        margin:10%;
+        width: 80%;
+        padding: 3%;
+    }
+    .contacto_sociales{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        flex-direction: column;
+        margin:10%;
+        width: 50%;
+        padding: 3%;
+    }
+
+    .mail{
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width:1175px){
+    .header_mio{
+        background: $header_pc
+    }
+    
+    .texto_footer{
+        font-size: 1.5rem;
+    }
+    /*index*/
+    
+    .margin_menor{
+        margin-left:5%;
+        width: 85%;
+    }
+    /*autor*/
+    .imagen_autor{
+        display: block;
+        margin-left: 20%;
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
+    .texto_biografia{
+        line-height: 1.5em;
+        font-size: 1.5rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .libro_cada_saga_index{
+        transition: all 1s;
+        &:hover{
+            width: 400px;
+            height: 600px;
+        }
+    }
+    /*eventos*/
+    .marco_eventos{
+        width: 20%;
+    }
+    /*libros*/
+    .libro_tamaño_libros{
+        width:25%;
+        margin: 2%;
+    }
+    .libros_sagas_libros{
+        margin:1%;
+        transition: all 1s;
+        &:hover{
+            width: 400px;
+            height: 600px;
+        
+        }
+    }
+    /*ventas*/
+    .imagen_libro{
+        display: block;
+        margin-left: 20%;
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+        height: 500px;
+    }
+    /*contacto*/
+    .contacto_formulario{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+        flex-direction: column;
+        width: 40%;
+        padding: 3%;
+    }
+    .contacto_sociales{
+        border-radius: 10px;
+        border: solid 3px $bordes_color;
+        color:$letras_titulos;
+        justify-content: center;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.7rem;
+        flex-direction: column;
+        width: 20%;
+        padding: 3%;
+    }
+    
+}
